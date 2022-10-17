@@ -1,0 +1,352 @@
+
+/* ========================================== */
+/* ========================================== */
+@import "../helpers/_rulesstyle";
+/* ========================================== */
+
+ .header 
+ {
+
+     width: 100wh;
+     display: flex;
+     flex-direction: row;
+    .navbar_hori
+    {
+        width: 20%;
+        background-color: $maincolor;
+        .navbar_hori_top
+        {
+            border-bottom: .5px solid lightgray;
+            padding:15px 0px;
+            color: $seccolor;
+           display: flex;
+           flex-direction: row;
+           @include trans;
+           cursor: pointer;
+           text-decoration: none;
+           &:hover 
+           {
+               color: $thrcolor;
+           }
+            h3 
+            {
+                text-transform: capitalize;
+                font-size: 16px;
+                margin: 0px;
+            }
+            i
+            {
+         transform: translateY(-1px);
+                padding-left: 10px;
+                font-size: 18px;
+                padding-right: 10px;
+            }
+        }
+        .navbar-brand
+        {
+            color: $seccolor;
+            font-size: 35px;
+            text-align: center;
+            margin-left: 75px;
+            margin-top: 20px;
+        }
+        p 
+        {
+            text-align: center;
+            color: $seccolor;
+            text-transform: capitalize;
+            font-size: 18px;
+            transform: translateY(-5px);
+        }
+        .nav
+        {
+            .nav-link
+            {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                font-size: 18px;
+                text-transform: capitalize;
+                color: #1E95F3;
+                border-radius:none;
+                letter-spacing: 1px;
+                color: $seccolor;
+                text-align: center;
+                @include trans;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                flex-direction: row;
+                margin:20px auto;
+                i 
+                {
+                    padding-right: 20px;
+                    padding-top: 3px;
+                    font-size: 20px;
+                }
+            }
+            .nav-link.active 
+            {
+
+                background-color: $thrcolor;
+                border-radius:none !important;
+                i 
+                {
+                    padding-right: 20px;
+                    padding-top: 3px;
+                    color: #1E95F3;
+                }
+            }
+        }
+    }
+    .content_hori
+    {
+        width: 80%;
+
+        background-color: rgb(236, 234, 234);
+        position: relative;
+        .nav_fixed
+        {
+            width: 100%;
+            height: 50px;
+            background-color: $maincolor;
+            color: $seccolor;
+            text-align: right;
+            padding-right: 30px;
+            position: relative;
+            i 
+            {
+                font-size: 18px;
+                margin-right: 30px;
+                margin-top: 17px;
+                cursor: pointer;
+                @include trans;
+                &:hover 
+                {
+                    color: $thrcolor;
+                }
+            }
+            a 
+            {
+                text-transform: capitalize;
+                position: relative;
+                margin-left: 10px;
+                cursor: pointer;
+                &:after 
+                {
+                    content: "";
+                    position: absolute;
+                    top:-7px;
+                    left: -20px;
+                    width: 1px;
+                    height: 27px;
+                    background-color: $seccolor;
+                }
+                 i 
+                 {
+                     font-size: 16px !important;
+                     transform: translateY(1px);
+                     &:hover 
+                     {
+                         color: $seccolor;
+                     }
+                 }
+            }
+            .account_info
+            {
+                color: $maincolor;
+                position: absolute;
+                border-radius: 7px;
+                box-shadow:3px 4px 11px rgb(150, 149, 149);
+                padding: 10px 15px;
+                bottom: -150px;
+                right: 20px;
+                display: none;
+                span 
+                {
+                    i 
+                    {
+                        font-size: 10px;
+                        color: lime;
+                        margin-left: 10px;
+                    }
+                }
+                div 
+                {
+                    text-align: left;
+                    padding-left: 10px;
+                    padding-bottom: 10px;
+                    margin-top: 0px;
+                    color: $thrcolor;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                    i 
+                    {
+                        margin-right: 5px;
+                        transform: translateY(2px);
+                    }
+                    @include trans;
+                    &:hover 
+                    {
+                        color: $maincolor;
+                    }
+                }
+            }
+      
+        }
+         h2 
+         {
+             margin-left: 20px;
+             text-transform: capitalize;
+             margin-top: 30px;
+             font-size: 45px;
+             color: $maincolor;
+         }
+         hr 
+         {
+             border: 1px solid lightgray;
+         }
+        .twolink
+        {
+            position: absolute;
+            top:74px;
+            left:20px;
+            a 
+            {
+                display: inline-block;
+                margin-right: 15px;
+                font-size: 12px;
+                width: 160px;
+                height: 40px;
+                line-height: 40px;
+                i 
+                {
+                    padding-right: 5px;
+                }
+            }
+            a:last-of-type 
+            {
+                background-color: $seccolor;
+                color: $maincolor;   
+                border: 2px solid $maincolor;
+            }
+        }
+        .dashall_info
+        {
+            margin-top: 20px;
+            position: absolute;
+            top: 150px;
+            left:0px;
+            .intro-card
+            {
+                border: 1px solid $maincolor;
+                width: 80%;
+                background-color: #fff;
+                .hello-card
+                {
+                    h4
+                    {
+                        font-size: 35px;
+                        span
+                        {
+                            color: $maincolor;
+                            font-weight: bold;
+                        }
+                    }
+                    margin-top: 30px;
+                    font-size: 20px;
+                    color: gray;
+                }
+            }
+            .own-qr
+            {
+                display: block;
+                width: 200px;
+                height: 200px;
+            }
+            .down-btn
+            {
+                display: inline-block;
+                margin-bottom: 10px;
+                margin-left: 40px;
+                border: 1px solid $maincolor;
+                padding: 7px 25px;
+                text-decoration: none;
+
+            }
+        }
+        .suuport_dash
+        {
+            position: absolute;
+            left: 20px;
+            bottom: 10px;
+            padding: 10px;
+            background-color: $seccolor;
+            text-transform: capitalize;
+            word-spacing: 1px;
+            font-size: 13px;
+            span 
+            {
+                color: gray;
+            }
+        }
+        .data-form
+        {
+            width: 800px;
+            margin: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #eee;
+        }
+        
+     
+      .tab-pane:nth-of-type(2)
+      {
+        .msg-box
+        {
+            border: 1px solid #cac3c3;
+            margin: 10px;
+            padding: 25px 10px;
+            background-color: #fff;
+           i
+           {
+               border: 3px solid $maincolor;
+               padding: 10px;
+               border-radius: 50%;
+           }
+            p
+            {
+                margin-top: 8px;
+            }
+        }
+
+      }
+        .garph_cont
+        {
+            width: 80%;
+            margin: 20px;
+            canvas
+            {
+
+            }
+        }
+    }
+ }
+ 
+/* ========================================== */
+/* ========================================== */
+/************ Start media Query ***************/
+/* ========================================== */
+@media (min-width:992px) and (max-width:1190px)
+{
+
+}
+/* ========================================== */
+@media (min-width:767px) and (max-width:991px)
+{
+}
+/* ========================================== */
+@media (max-width:766px)
+{
+     
+    
+}

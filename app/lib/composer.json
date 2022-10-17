@@ -1,0 +1,5 @@
+{
+    "require": {
+        "endroid/qr-code-bundle": "^4.0"
+    }
+}
