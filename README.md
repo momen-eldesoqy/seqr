@@ -1,6 +1,7 @@
 # seqr
 My graduation project .
-![the project poster](https://drive.google.com/file/d/1PWApyZtzxwmCbSNUALUtUszeEcT9VGPU/view?usp=sharing)
+
+![poster](https://user-images.githubusercontent.com/73249012/196179347-c1702840-cde8-4716-a658-f662a62207d6.jpeg)
 
 ## problem : 
 Every day in our daily life, we face many events and problems, and each of us wants to search for the easiest and fastest ways to solve these problems.
@@ -20,3 +21,4 @@ Without overthinking it, our Team sat down over the following days and created a
 - QR codes on bus stops and train stations.
 - Posted next to paintings and sculptures at museum.
 
+### [Project documentaion](https://drive.google.com/file/d/14SvZ5opZyqpOeMGltXeKgMuX_Mz8bWq7/view?usp=sharing)
